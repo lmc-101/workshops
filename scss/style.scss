@@ -10,6 +10,7 @@
     margin: 0 auto;
 }
 
+/*header*/
 header {
     background-color: black;
     width: 100%;
@@ -52,7 +53,6 @@ nav li {
     /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(229, 229, 229, 1) 90%, rgba(229, 229, 229, 1) 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    height: 700px;
 }
 
 
@@ -143,11 +143,6 @@ nav li {
     }
 }
 
-/*grid*/
-
-.col-1 {
-    height: 17.5vw;
-}
 
 /*section 2*/
 .merchandise {
@@ -160,6 +155,10 @@ nav li {
         justify-content:space-between;
         align-items: flex-start;
         padding-top: 2.2vw;
+        
+        .col-1 {
+            height: 17.5vw;
+        }
     }
 }
 
@@ -397,61 +396,68 @@ nav li {
 .contact {
     background-color: white;
     width: 100%;
-    height: 700px;
+    height: 45vw;
 }
 
+.contact_form {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+
 .form {
-    width: 63%;
-    float: left;
-    height: 500px;
+    height: 30vw;
 }
 
 .submit_holder {
-    width: 32%;
     float: right;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-content: center;
-    height: 500px;
-    margin-top: -30px;
+    height: 30vw;
 }
 
 .red_chair {
-    background-image: url(/images/red_chair.png);
-    width: 350px;
-    height: 299px;
+    background-image: url(../images/red_chair.png);
+    width: 100%;
+    height: 30vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    margin-bottom: 20px;
+    margin-bottom: 2vw;
     display: flex;
     align-self: center;
-    margin-left: -30px;
 }
 
 input[type=submit] {
     background-color: rgb(39, 199, 171);
     color: white;
     width: 100%;
-    height: 85px;
-    font-size: 40px;
+    height: 5vw;
+    font-size: 2vw;
     border-radius: 10px;
     border: none;
 }
 
 .questions {
     width: 100%;
-    height: 85px;
-    margin-bottom: 20px;
+    height: 5vw;
+    margin-bottom: 1vw;
     font-size: 50px;
     padding: 12px;
     border: 0.5px solid rgb(39, 199, 171);
     font-weight: 200;
+    
+    &:focus {
+        box-shadow: 0 0.01vw 0.01vw rgba(39, 199, 171, 0.099) inset, 0 0 1.5vw rgba(39, 199, 171, 0.7);
+        outline: 0 none;
+    }
 }
 
 #message {
-    height: 255px;
+    height: 18.3vw;
 }
 
 textarea {
@@ -459,51 +465,66 @@ textarea {
 }
 
 .personal_data {
+    width: 100%;
     color: lightgray;
-    font-size: 30px;
-    display: block;
-    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 2vw;
 }
 
 .checkbox {
-    width: 70px;
-    height: 70px;
-    border: 1px solid rgb(39, 199, 171);
+    width: 4vw;
+    height: 3vw;
+    border: 0.01vw solid rgb(39, 199, 171);
     border-radius: 5px;
-    display: table-cell;
-    margin-top: 10px;
-    background-image: url('../images/form_ok.jpg');
-    background-size: contain;
+    background-image: none;
+    background: white;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     
+    &:hover {
+        background-image: url('../images/form_ok.jpg');
+        
+    }
+    
 }
 
-.description{
-    display: table-cell;    
-    padding-left: 15px;
+.description{    
+    padding-left: 1vw;
+    font-size: 1.2vw;
 }
 
 
+/*footer*/
 footer {
     background: white;
     width: 100%;
-    height: 200px;
+    
+    
+    .main {
+        display: flex;
+        justify-content: space-between;
+        height: 8vw;
+        
+    }
 }
 
 .copyrights {
     color: lightgray;
-    font-size: 20px;
-    font-weight: 600;
-    float: left;
-    line-height: 200px;
-    width: 60%;
+    display: flex;
+    align-items: center;
+    
+    
+    p {
+        font-size: 1vw;
+        font-weight: 600;
+    }
 }
 
 .right_side {
     float: right;
-    width: 35%;
-    display:flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -513,44 +534,43 @@ footer {
     float: left;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    margin-bottom: 30px;
+    justify-content: space-between;
+    width: 40%;
 }
 
 
 .flickr, .vimeo, .pinterest, .twitter {
-    width: 50px;
-    height: 50px;
+    width: 2vw;
+    height: 2vw;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 .flickr {
-    background-image:url(/images/flickr.png);
+    background-image:url(../images/flickr.png);
 }
 
 .vimeo {
-    background-image:url(/images/vimeo.png);
+    background-image:url(../images/vimeo.png);
 }
 
 .pinterest {
-    background-image:url(/images/pinterest.png);
+    background-image:url(../images/pinterest.png);
 }
 
 .twitter {
-    background-image:url(/images/twitter.png);
+    background-image:url(../images/twitter.png);
 }
 
 .grey_logo {
     float: right;
-    font-size: 25px;
+    font-size: 1.5vw;
     color: lightgray;
-    word-spacing: 2px;
-    line-height:200px;
-}
-
-.grey_logo span {
-    font-weight: 600;
+    word-spacing: 0.02vw;
+    
+    span {
+        font-weight: 600;
+    }
 }
 
 ///*dropdown*/

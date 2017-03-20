@@ -35,7 +35,6 @@ header {
     font-weight: 600;
 }
 
-
 nav li {
     display: inline-block;
     color: white;
@@ -44,22 +43,25 @@ nav li {
     font-size: 1vw;
 }
 
-.slider_background {
-    background: rgb(255, 255, 255);
-    /* Old browsers */
-    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(229, 229, 229, 1) 90%, rgba(229, 229, 229, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(229, 229, 229, 1) 90%, rgba(229, 229, 229, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 56%, rgba(229, 229, 229, 1) 90%, rgba(229, 229, 229, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-}
-
 
 /*slider section*/
 .slider_background {
     
+   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,ffffff+56,e5e5e5+90,e5e5e5+100 */
+    
+    background: rgb(255,255,255); 
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 56%, rgba(229,229,229,1) 90%, rgba(229,229,229,1) 100%); 
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 56%,rgba(229,229,229,1) 90%,rgba(229,229,229,1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,1) 56%,rgba(229,229,229,1) 90%,rgba(229,229,229,1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); 
+    /* IE6-9 */
+    
     height: 40vw;
+    
     .main {
         display: flex;
         justify-content: space-between;
@@ -95,14 +97,18 @@ nav li {
 
 .black_chair {
     width: 50%;
-    height: 20vw;
     display: flex;
     align-items: center;
     justify-content: center;
     
-    img {
-        height: auto;
-        width: 100%;
+    
+    .main_chair {
+        width: 30vw;
+        height: 30vw;
+        background-image: url(../images/black_chair.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -125,6 +131,7 @@ nav li {
         line-height: 2vw;
         margin-bottom: 1vw;
         margin-top: 1vw;
+        white-space: nowrap;
     }
 }
 
@@ -144,7 +151,7 @@ nav li {
 }
 
 
-/*section 2*/
+/*merchandise section*/
 .merchandise {
     background-color: white;
     height: auto;
@@ -220,7 +227,7 @@ nav li {
 }
 
 
-/*section 3*/
+/*prices section*/
 
 .plan_offer {
     background-color: rgb(241, 241, 241);
@@ -392,7 +399,7 @@ nav li {
     
 }
 
-/*section 4*/
+/*contact section*/
 .contact {
     background-color: white;
     width: 100%;

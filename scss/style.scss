@@ -6,7 +6,7 @@
 }
 
 .main {
-    width: 80vw;
+    width: 75vw;
     margin: 0 auto;
 }
 
@@ -226,13 +226,13 @@ nav li {
 .plan_offer {
     background-color: rgb(241, 241, 241);
     width: 100%;
-    height: 50vw;
+    height: 60vw;
 }
 
 .headline {
     width: 100%;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 4vw;
+    padding-bottom: 4vw;
     
     h2 {
         font-size: 2vw;
@@ -244,34 +244,33 @@ nav li {
     }
 }
 
-.headline h2 {
-    
-}
-
 .plan_holder {
     width: 100%;
+    height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .plan {
-    width: 31%;
-    height: 700px;
-    border: 1px solid lightgray;
+    height: 45vw;
+    border: 0.01vw solid lightgray;
     position: relative;
     display: flex;
     flex-direction: column;
+    background: rgb(249, 249, 249)
     
 }
 
 .circles {
     background: none;
     position: absolute;
-    width: 60px;
-    height: 60px;
-    margin-top: -40px;
-    margin-left: 218px;
+    width: 5vw;
+    height: 5vw;
+    display: flex;
+    align-self: center;
+    margin-top: -3vw;
 }
 
 .big_circle, .small_circle {
@@ -279,73 +278,82 @@ nav li {
 }
 
 .big_circle {
-    width: 60px;
-    height: 60px;
+    width: inherit;
+    height: inherit;
     display: flex;
     justify-content: center;
     align-items: center;
     background: white;
-    border: 1px solid lightgray;
+    border: 0.01vw solid lightgray;
 }
 
 .small_circle {
-    width: 30px;
-    height: 30px;
+    width: 2.5vw;
+    height: 2.5vw;
     background: lightgray;
-    border:1px solid lightgray;
+    border: 0.01vw solid lightgray;
 }
 
 .price_place {
     background-color: rgb(249, 249, 249);
     width: 100%;
-    height: 350px;
+    height: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
+    h3 {
+        font-size: 2vw;
+        color: rgb(39, 199, 171);
+        margin-bottom: 2vw;
+        margin-top: 2vw;
+    }
 }
 
-.price_place h3 {
-    font-size: 30px;
-    color: rgb(39, 199, 171);
-    margin-bottom: 30px;
-}
 .price_circle {
-    width: 200px;
-    height: 200px;
+    width: 11vw;
+    height: 11vw;
     background: white;
     border-radius: 50%;
-    border: 1px solid lightgray;
+    border: 0.01vw solid lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    
+    p {
+        color: lightgray;
+        font-size: 3vw;
+        font-weight: 600;
+        line-height: 3vw;
+        
+        sup {
+           font-size: 1.5vw;
+            font-weight: 400;
+            top: -2vw; 
+        }
+        
+        span {
+            font-size: 1.5vw;
+            font-weight: 400;
+        }
+    }
 }
 
-.price_circle p {
-    color: lightgray;
-    font-size: 65px;
-    font-weight: 600;
-    line-height: 50px;
+.options {
+    height: 40%;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: baseline;
 }
-
-.price_circle p sup {
-    font-size: 30px;
-    font-weight: 400;
-    top: -30px;
-}
-
-.price_circle p span {
-    font-size: 30px;
-    font-weight: 400;
-}
-
 .option1, .option2 {
     width: 100%;
-    height: 50px;
-    font-size: 30px;
-    line-height: 50px;
+    height: 4vw;
+    font-size: 2vw;
+    line-height: 4vw;
     text-align: center;
     color: grey;
 }
@@ -358,41 +366,34 @@ nav li {
 }
 
 .join_place {
-    background-color: rgb(249, 249, 249);
+    height: 10%;
     width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content:flex-end;
-    align-items: center;
-}
-
-.button_basic {
-    height: 250px
-}
-
-.button_standard {
-    height: 200px;
-}
-
-.button_advance {
-    height:150px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 1vw;
+    margin-bottom: 2vw;
 }
 
 .button_join {
-    padding: 10px 15px;
+    padding: 1vw 1.5vw;
     background-color: rgb(39, 199, 171);
     text-align: center;
     border-radius: 10px;
-    width: 150px;
-    margin-bottom: 30px;
+    width: 10vw;
+    
+    
+    a {
+        color: white;
+        font-size: 1.3vw;
+        text-decoration: none;
+        font-weight: 600;
+    }
+    
 }
 
-.button_join a {
-    color: white;
-    font-size: 20px;
-    text-decoration: none;
-}
-
+/*section 4*/
 .contact {
     background-color: white;
     width: 100%;
@@ -552,9 +553,9 @@ footer {
     font-weight: 600;
 }
 
-/*dropdown*/
+///*dropdown*/
 
-/* Dropdown Button */
+///* Dropdown Button */
 //.dropbtn {
 //    background-color: #000000;
 //    color: white;

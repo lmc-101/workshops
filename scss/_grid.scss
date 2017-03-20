@@ -1,0 +1,12 @@
+@for $col from 1 to 3 {
+    .col-#{$col} {
+        width: $col * 29.999%;
+    }
+}
+
+@media (max-width: 100%) {
+    [class*='col-'] {
+        float: none;
+        width: 100%; 
+    }
+}

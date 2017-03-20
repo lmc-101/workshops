@@ -1,11 +1,12 @@
 @import 'reset';
+@import 'grid';
 
 * {
     font-family: 'Raleway', sans-serif;
 }
 
 .main {
-    width: 70vw;
+    width: 80vw;
     margin: 0 auto;
 }
 
@@ -58,16 +59,16 @@ nav li {
 /*slider section*/
 .slider_background {
     
-    height: 30vw;
+    height: 40vw;
     .main {
         display: flex;
         justify-content: space-between;
-        height: 30vw;
+        height: inherit;
     }
 }
 .left_arrow,
 .right_arrow {
-    height: 30vw;
+    height: 40vw;
     display: flex;
     align-items: center;
     font-size: 7vw;
@@ -95,7 +96,7 @@ nav li {
 .black_chair {
     width: 50%;
     height: 20vw;
-    disply: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     
@@ -112,20 +113,21 @@ nav li {
     align-content: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    
+    h1 {
+        font-size: 2.5vw;
+    }
+    
+    p {
+        color: grey;
+        font-size: 1vw;
+        text-align: center;
+        line-height: 2vw;
+        margin-bottom: 1vw;
+        margin-top: 1vw;
+    }
 }
 
-.main_idea h1 {
-    font-size: 2.5vw;
-}
-
-.main_idea p {
-    color: grey;
-    font-size: 1vw;
-    text-align: center;
-    line-height: 2vw;
-    margin-bottom: 1vw;
-    margin-top: 1vw;
-}
 
 .button {
     padding: 0.75vw 1.5vw;
@@ -133,92 +135,117 @@ nav li {
     text-align: center;
     border-radius: 0.5vw;
     width: 15vw;
+    
+    a {
+        color: white;
+        font-size: 1.5vw;
+        text-decoration: none;
+    }
 }
 
-.button a {
-    color: white;
-    font-size: 1.5vw;
-    text-decoration: none;
+/*grid*/
+
+.row:before, .row:after {
+    content: " ";
+    display: table;
+    clear: both;
 }
 
+.col-1 {
+    height: 16.5vw;
+}
+
+/*section 2*/
 .merchandise {
     background-color: white;
-}
-
-.merchandise,
-.merchandise_display {
-    height: 30vw;
-}
-
-.merchandise_display {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.chairs {
-    width: 500px;
-    height: 350px;
-    margin-top: -50px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-
-.chair_clair {
-    background-image: url(/images/box1_img.jpg);
-}
-
-.chair_margarita {
-    background-image: url(/images/box2_img.jpg);
-}
-
-.transparent_box {
-    width: inherit;
-    height: 100px;
-    background-color: white;
-    margin-top: 230px;
-    background: rgba(255,255,255, 0.5);
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-left: 30px;
-}
-
-.chair_text {
-    width: 500px;
-    height: 400px;
-    background: white;
-    border: 2px solid lightgray;
-    padding: 30px;
-    display: flex;
-    flex-direction: column;
+    height: auto;
+    
+    .merchandise_display {
+        height: 30vw;
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-start;
+        padding-top: 2.2vw;
+    }
 }
 
 .title {
     color: black;
     font-weight: 600;
-    font-size: 25px;
+    font-size: 1vw;
 }
 
 .underline {
     background-color: rgb(39, 199, 171);
-    width: 215px;
-    height:10px;
+    width: 10vw;
+    height: 0.3vw;
 }
 
-.chair_text p {
-    font-size: 20px;
-    line-height: 1.5em;
-    margin-top: 30px;
-    color: gray;
+.chair_clair {
+    background-image: url(../images/box1_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
-.chair_text .title {
-    margin-top: 10px;
+.chair_margarita {
+    background-image: url(../images/box2_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
+.chair_clair, .chair_margarita {
+    display: flex;
+    align-items: flex-end;
+}
+.transparent_box {
+    height: 5vw;
+    width: 100%;
+    background: rgba(255,255,255, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 1vw;
+    
+}
+//.transparent_box {
+//    width: inherit;
+//    height: 100px;
+//    background-color: white;
+//    margin-top: 230px;
+//    background: rgba(255,255,255, 0.5);
+//    display: flex;
+//    flex-direction:column;
+//    justify-content: center;
+//    flex-wrap: wrap;
+//    padding-left: 30px;
+//}
+
+.chair_text {
+    height: 20vw;
+    background: white;
+    border: 2px solid lightgray;
+    padding: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    
+    p {
+        font-size: 0.7vw;
+        line-height: 1.5vw;
+        margin-top: 1vw;
+        color: gray;
+    }
+}
+
+
+
+//.chair_text .title {
+//    margin-top: 10px;
+//}
+
+
+/*section 3*/
 .plan_offer {
     background-color: rgb(241, 241, 241);
     width: 100%;
